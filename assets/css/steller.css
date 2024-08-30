@@ -12055,3 +12055,93 @@ main {
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   z-index: 1000;
 }
+
+
+@media (max-width: 768px) {
+  .header {
+      min-height: auto;
+      padding-top: 60px;
+      padding-bottom: 60px;
+  }
+
+  .header .container {
+      flex-direction: column;
+  }
+
+  .header .infos {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .header .img-holder {
+      display: none; /* or adjust as needed */
+  }
+
+  .header .container .infos .title {
+      font-size: 40px;
+  }
+
+  .header .container .infos p {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+      left: 50px;
+  }
+
+  .timeline-item {
+      padding-left: 90px;
+  }
+
+  .timeline-icon {
+      left: 30px;
+  }
+
+  .company-logo {
+      float: none;
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
+      height: auto;
+  }
+
+  .timeline-content h3,
+  .timeline-content h4,
+  .timeline-content p,
+  .timeline-content ul {
+      padding-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .containerCV,
+  .containerCV2,
+  .containerSkill {
+      width: 95%;
+  }
+
+  .section-titleCV,
+  .section-titleSkill {
+      font-size: 1.5rem;
+  }
+
+  .timeline-content h3 {
+      font-size: 1.2rem;
+  }
+
+  .timeline-content h4 {
+      font-size: 1rem;
+  }
+
+  .timeline-content p,
+  .timeline-content ul {
+      font-size: 0.9rem;
+  }
+
+  .skill-item {
+      padding: 8px 12px;
+      font-size: 14px;
+  }
+}

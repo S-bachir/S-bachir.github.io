@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Steller main styles -->
 	<link rel="stylesheet" href="assets/css/steller.css">
+    <link rel="stylesheet" href="assets/css/dialog.css">
+    <!-- Include Themify Icons CSS -->
+    <link rel="stylesheet" href="https://themify.me/wp-content/themes/themify-me/css/themify-icons.css">
+
     <!-- <link href="./assets/css/output.css" rel="stylesheet"> -->
 
 </head>
@@ -85,9 +89,10 @@
             </div>              
             <div class="img-holder">
                 <img src="assets/imgs/man.svg" alt="">
-       
+                
                 <div id="cool-mode-BS"></div> 
-
+                <div id="cool-mode-and-border-beam-BS"></div> 
+                <!-- <div id="shiny-button-and-border-beam-BS"></div>  -->
             </div>      
         </div>  
     
@@ -297,16 +302,20 @@
 
             <div class="row">
                 <div class="col-sm-4">
+
+                    <!-- Dialog for Project Pokemon -->
                     <div class="img-wrapper">
                         <img src="assets/imgs/Pokemon_projet.png" alt="" loading="lazy">
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <h5>Academic project - Pokemon</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)" onclick="openDialog('pokemonDialog')"><i class="ti-zoom-in"></i></a>
                                 <a href="https://github.com/S-bachir/projet_info_Pokemon_Gr25" target="_blank"><i class="ti-link"></i></a>
                             </div>  
                         </div>
                     </div>
+
+                    <!-- Dialog for Project Zlecaf -->
                     <div class="img-wrapper">
                         <!-- <img src="assets/imgs/folio-2.jpg" alt=""> -->
                         <img src="assets/imgs/Work in Progress hd.gif" alt="Work in Progress" class="img-fluid">
@@ -315,13 +324,17 @@
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <h5>Zlecaf Alpha App (WebApp)</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)" onclick="openDialog('zlecafAlphaDialog')"><i class="ti-zoom-in"></i></a>
                                 <a href="https://github.com/S-bachir/Zlecaf_Alpha_App" target="_blank"><i class="ti-link"></i></a>
                             </div>                              
                         </div>
                     </div>                  
                 </div>
+
+
                 <div class="col-sm-4">
+
+                    <!-- Dialog for Project MATNO -->
                     <div class="img-wrapper">
                         <!-- <img src="assets/imgs/Work in Progress 3.gif" alt="Animated Webapp Demo"> -->
                         <img src="assets/imgs/Work in Progress 2 hd.gif" alt="Work in Progress" class="img-fluid">
@@ -329,7 +342,7 @@
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <h5>MATNO Project</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)" onclick="openDialog('matnoDialog')"><i class="ti-zoom-in"></i></a>
                                 <a href="javascript:void(0)"><i class="ti-link"></i></a>
                             </div>  
                         </div>
@@ -339,19 +352,22 @@
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <h5>Zlecaf Beta App</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)" onclick="openDialog('zlecafBetaDialog')"><i class="ti-zoom-in"></i></a>
                                 <a href="https://github.com/S-bachir/Zlecaf-Beta-App" target="_blank"><i class="ti-link"></i></a>
                             </div>                              
                         </div>
                     </div>                    
                 </div>
+
                 <div class="col-sm-4">
+
+                    <!-- Dialog for Project Economic Growth -->
                     <div class="img-wrapper">
                         <img src="assets/imgs/Economic_Growth-and-Environmental_Quality.png" alt="" loading="lazy">
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <h5>Economic Growth and Environmental Quality - The Cas of West African Countries (ECOWAS)</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)" onclick="openDialog('economicGrowthDialog')"><i class="ti-zoom-in"></i></a>
                                 <a href="https://github.com/S-bachir/Economic-growth-and-environmental-quality-the-case-of-West-African-countries" target="_blank"><i class="ti-link"></i></a>
                             </div>  
                         </div>
@@ -363,7 +379,7 @@
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <h5>Optimizing Agricultural Yields Through Satellite Image Analysis</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)" onclick="openDialog('economicGrowthDialog')"><i class="ti-zoom-in"></i></a>
                                 <a href="javascript:void(0)"><i class="ti-link"></i></a>
                             </div>                              
                         </div>
@@ -373,6 +389,82 @@
 
         </div>
     </section>
+
+                             <!-- Dialog -->
+                        <!-- Dialog for Project Pokemon -->
+                        <div id="pokemonDialog" class="dialog-overlay">
+                            <div class="dialog">
+                            <button class="close-btn" onclick="closeDialog('pokemonDialog')">
+                                <i class="ti-close"></i>
+                            </button>
+                            <h2>Academic Project - Pokemon</h2>
+                            <img src="assets/imgs/Pokemon_projet.png" alt="Pokemon Project Image">
+                            <p>This project explores various aspects of Pokemon data analysis, including statistics, trends, and predictive models.</p>
+                            <!-- Add more content as needed -->
+                            </div>
+                        </div>
+
+
+                        <!-- Dialog for Project Zlecaf -->
+                        <div id="zlecafAlphaDialog" class="dialog-overlay">
+                            <div class="dialog">
+                            <button class="close-btn" onclick="closeDialog('zlecafAlphaDialog')">
+                                <i class="ti-close"></i>
+                            </button>
+                            <h2>Zlecaf Alpha App</h2>
+                            <!-- <img src="assets/imgs/Zlecaf_Beta.png" alt="Zlecaf Project Image"> -->
+                            <p>This project explores various aspects of Zlecaf data analysis, including statistics, trends, and predictive models.</p>
+                            <!-- Add more content as needed -->
+                            </div>
+                        </div>
+
+                        <!-- Dialog for Project Zlecaf Beta -->
+                        <div id="zlecafBetaDialog" class="dialog-overlay">
+                            <div class="dialog">
+                            <button class="close-btn" onclick="closeDialog('zlecafBetaDialog')">
+                                <i class="ti-close"></i>
+                            </button>
+                            <h2>Zlecaf Beta App</h2>
+                            <img src="assets/imgs/Zlecaf_Beta.png" alt="Zlecaf Beta Project Image">
+                            <!-- Add more content as needed -->
+                            </div>
+                        </div>
+
+                        <!-- Dialog for Project MATNO -->
+                        <div id="matnoDialog" class="dialog-overlay">
+                            <div class="dialog">
+                            <button class="close-btn" onclick="closeDialog('matnoDialog')">
+                                <i class="ti-close"></i>
+                            </button>
+                            <h2>MATNO Project</h2>
+                            <!-- Add more content as needed -->
+                            </div>
+                        </div>
+
+                        <!-- Dialog for Project Economic Growth -->
+                        <div id="economicGrowthDialog" class="dialog-overlay">
+                            <div class="dialog">
+                            <button class="close-btn" onclick="closeDialog('economicGrowthDialog')">
+                                <i class="ti-close"></i>
+                            </button>
+                            <h2>Economic Growth and Environmental Quality</h2>
+                            <img src="assets/imgs/Economic_Growth-and-Environmental_Quality.png" alt="Economic Growth Project Image">
+                            <p>This project explores various aspects of Zlecaf data analysis, including statistics, trends, and predictive models.</p>
+                            <p>This project explores various aspects of Zlecaf data analysis, including statistics, trends, and predictive models.</p>
+
+                            <p>This project explores various aspects of Zlecaf data analysis, including statistics, trends, and predictive models.</p>
+
+                            <p>This project explores various aspects of Zlecaf data analysis, including statistics, trends, and predictive models.</p>
+
+                            <p>This project explores various aspects of Zlecaf data analysis, including statistics, trends, and predictive models.</p>
+
+                            </div>
+                        </div>  
+
+
+
+
+
     <!-- End of portfolio section -->
 
     <!-- Testmonial Section -->
@@ -602,8 +694,121 @@
     <script>
         ScrollReveal().reveal('.section', { delay: 200, distance: '50px', duration: 1000 });
     </script>
-
+    
     <!-- TypeScript -->
     <script type="module" src="index.tsx"></script>
+
+    <script src="dialog.js"></script>
+
+
+    <style>
+        .dialog-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Apply blur effect */
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px); /* For Safari */
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            display: none; /* Hidden by default */
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Fallback for browsers that don't support backdrop-filter */
+        @supports not ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
+            .dialog-overlay {
+            background-color: rgba(0, 0, 0, 0.7); /* Make overlay darker if blur is not supported */
+            }
+        }
+        
+        /* Dialog Content */
+        .dialog {
+            background-color: #fff;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 90%;
+            overflow-y: auto;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Close Button */
+        .dialog .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #f0f0f0;
+            border: none;
+            cursor: pointer;
+            color: #333;
+            padding: 10px;
+            border-radius: 50%;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        .dialog .close-btn:hover {
+            background-color: #e0e0e0;
+            transform: rotate(90deg);
+        }
+        
+        /* Close Icon Styling */
+        .dialog .close-btn i {
+            font-size: 20px;
+        }
+        
+        /* Dialog Header */
+        .dialog h2 {
+            margin-top: 0;
+        }
+        
+        /* Ensure images fit within the dialog */
+        .dialog img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Prevent background scrolling when dialog is open */
+        body.dialog-open {
+            overflow: hidden;
+        }
+    </style>
+
+<!-- Blur effect dialog -->
+<script>
+function openDialog(dialogId) {
+    const dialogOverlay = document.getElementById(dialogId);
+    if (dialogOverlay) {
+      dialogOverlay.style.display = 'flex';
+      // Prevent background scrolling
+      document.body.classList.add('dialog-open');
+    }
+  }
+  
+  // Function to close a dialog
+  function closeDialog(dialogId) {
+    const dialogOverlay = document.getElementById(dialogId);
+    if (dialogOverlay) {
+      dialogOverlay.style.display = 'none';
+      // Allow background scrolling
+      document.body.classList.remove('dialog-open');
+    }
+  }
+  
+  // Close dialog when clicking outside the dialog content
+  document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('dialog-overlay')) {
+      closeDialog(event.target.id);
+    }
+  });
+  
+</script>
+
+
 </body>
 </html>

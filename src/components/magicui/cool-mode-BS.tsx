@@ -25,3 +25,20 @@ export function CoolModeBS() {
 //       </div>
 //     );
 //   }
+// export function CoolModeAndBorderBeamBS() {
+//   console.log("CoolModeBS component is rendering");
+//   return (
+//     <div className="relative justify-center">
+//       <CoolMode
+//         options={{
+//           particle: "assets/imgs/man.svg",
+//         }}
+//       >
+//         <div className="relative">
+//           <Button>Click Me!</Button>
+//           <BorderBeam size={100} duration={12} delay={9} />
+//         </div>
+//       </CoolMode>
+//     </div>
+//   );
+// }

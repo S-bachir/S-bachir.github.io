@@ -1,9 +1,9 @@
 # Bachir Sabo | Portfolio & Resume
 
 [![Node.js 14+](https://img.shields.io/badge/Node.js-14%2B-green)](https://nodejs.org/en/download/)
-[![Material-UI](https://img.shields.io/badge/UI-Material--UI-0081CB)](https://mui.com/)
 [![Magic UI](https://img.shields.io/badge/UI-Magic%20UI-FF69B4)](https://magicui.design/)
-
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-4%2B-blueviolet)](https://getbootstrap.com/)
+[![FontAwesome](https://img.shields.io/badge/Icons-FontAwesome-blue)](https://fontawesome.com/)
 
 ## Overview
 

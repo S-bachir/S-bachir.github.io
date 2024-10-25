@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { NumberTickerProjects } from "./src/components/number-ticker-projects";
+import { NumberTickerProjects } from "@/components/number-ticker-projects";
 
 ReactDOM.render(
     <React.StrictMode>
